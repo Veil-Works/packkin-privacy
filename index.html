@@ -75,7 +75,8 @@
       </p>
       <p>
         Packkin does not require an account. We do not operate a server that receives or
-        synchronizes your packing lists or household information. Destination search uses a bundled
+        synchronizes your packing lists or household information. If you choose to turn on
+        anonymous usage statistics, Packkin sends only the weekly counts described below. Destination search uses a bundled
         place-name catalog; search terms and saved destinations are not sent to a geocoding or map
         provider. The app does not use your device’s GPS location.
       </p>
@@ -139,10 +140,47 @@
         practices.
       </p>
 
+      <h2>Optional anonymous usage statistics</h2>
+      <p>
+        Usage statistics are off unless you turn them on, either in Settings or when Packkin asks
+        you once after you archive your first trip. You can turn them off at any time in Settings.
+        They help us understand how the app is used, for example whether templates get reused or
+        how many families plan for several travelers, so we can improve it.
+      </p>
+      <p>
+        When they are on, Packkin sends one summary for each week in which you used the app, the
+        next time you open it. A summary contains only: the platform (Android or iOS), the app
+        version, the app language, whether the full version is unlocked; the number of active
+        trips, archived trips and templates, as ranges such as “3–4” or “5+”; for your trips, how
+        many fall into ranges of travelers, bags and packing items; how many trips you created
+        that week from an empty list, a starter list, a template or a copy; how complete trips were
+        when you archived them, as ranges; whether you used print, share, backup export, reordering
+        or undo that week; and whether the upgrade screen was shown or a free limit was reached.
+      </p>
+      <p>
+        A summary never contains list or trip names, destinations, dates, traveler or household
+        names, packing items, tasks, notes, your device model, or any account, device, advertising
+        or other identifier, so they are not linked to you. The service records when each summary
+        arrives. The web preview
+        of Packkin and some testing builds never send statistics.
+      </p>
+      <p>
+        Summaries are sent to a service we operate on Cloudflare at usage.packkin.app and stored in
+        Cloudflare Workers Analytics Engine for about three months. As with any connection,
+        Cloudflare receives your IP address to deliver the request, and it may appear in
+        Cloudflare’s standard traffic and security reports for our domain. Our service uses it only
+        in hashed form, to limit how often requests can be sent, and does not store it with the
+        statistics. Turning statistics off deletes any counts that have not been sent yet. Because
+        summaries that were already sent cannot be linked to you, we cannot single them out for
+        deletion; they expire automatically. See
+        <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare’s privacy policy</a>.
+      </p>
+
       <h2>Advertising, tracking and permissions</h2>
       <p>
         Packkin has no advertisements and does not sell your personal information. We do not use
-        advertising trackers or send your packing activity to a general-purpose analytics service.
+        advertising trackers or third-party analytics services, and we do not track you across apps
+        or websites. Usage statistics are optional and work as described above.
         We do not access your contacts, camera or microphone to operate the packing app. Import and
         export features use your device’s file and sharing interfaces.
       </p>
